@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDSC SAMPLE PROJECT</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="cont-1 element">
+            <div class="content-1">
+                <div class="search place">
+                    <input class="input" id="input_loc" placeholder="ENTER THE CITY...">
+                    <button class="but" onclick="myfunc()">Search</button>
+                </div>
+                <div class="places">
+                    <div class="place p1" id ="place1">
+                        <p class="temp" id="east_temp">16<sup>o</sup>C</p>
+                        <p class="locate" id="east_loc">EAST DELHI</p>
+                    </div>
+                    <div class="place p2" id="place2">
+                        <p class="temp" id="west_temp">34<sup>o</sup>C</p>
+                        <p class="locate" id="west_loc">WEST DELHI</p>
+                    </div>
+                    <div class="place p3" id="place3">
+                        <p class="temp" id="north_temp">23<sup>o</sup>C </p>
+                        <p class="locate" id="north_loc">NORTH DELHI</p>
+                    </div>
+                    <div class="place p4" id="place4">
+                        <p class="temp" id="south_temp">5<sup>o</sup>C</p>
+                        <p class="locate" id="south_loc">SOUTH DELHI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cont-2 element">
+            <div class="ele2 rrr">
+                <div class="output">
+                    <div class="out_temp" id="out_temp">40<sup>o</sup>C</div>
+                    <div id="output_loc"><p id="out_loc">DELHI</p></div>
+                </div>
+                <div class="symbol">
+                    <img src="sunny.webp">
+                </div>
+            </div>
+            <div class="ele2 hhh">
+                <div class="week">
+                    <p>LAST WEEK</p>
+                </div>
+                <div class="days">
+                    <div class="day">
+                        <div class="tt">
+                            <button onclick="daytemp(this.id)" id="mon">MONDAY</button>
+                        </div>
+                        <div class="t" id="mon_temp">23<sup>o</sup>C</div>
+                    </div>
+                    <div class="day">
+                        <div class="tt">
+                            <button onclick="daytemp(this.id)" id="tue">TUESDAY</button>
+                        </div>
+                        <div class="t" id="tue_temp">21<sup>o</sup>C</div>
+                    </div>
+                    <div class="day">
+                        <div class="tt">
+                            <button onclick="daytemp(this.id)" id="wed">WEDNESDAY</button>
+                        </div>
+                        <div class="t" id="wed_temp">24<sup>o</sup>C</div>
+                    </div>
+                    <div class="day">
+                        <div class="tt">
+                            <button onclick="daytemp(this.id)" id="thur">THURSDAY</button>
+                        </div>
+                        <div class="t" id="thurs_temp">19<sup>o</sup>C</div>
+                    </div>
+                    <div class="day">
+                        <div class="tt">
+                            <button onclick="daytemp(this.id)" id="fri">FRIDAY</button>
+                        </div>
+                        <div class="t" id="fri_temp">20<sup>o</sup>C</div>
+                    </div>
+                    <div class="day">
+                        <div class="tt">
+                            <button onclick="daytemp(this.id)" id="sat">SATURDAY</button>
+                        </div>
+                        <div class="t" id="sat_temp">18<sup>o</sup>C</div>
+                    </div>
+                    <div class="day">
+                        <div class="tt">
+                            <button onclick="daytemp(this.id)" id="sun">SUNDAY</button>
+                        </div>
+                        <div class="t" id="sun_temp">22<sup>o</sup>C</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="time ele2">
+                <div class="head1">
+                    <p id="out_day">MONDAY</p>
+                </div>
+                <div class="head2">
+                    <div class="time_" id="10a.m.">
+                        <div id="tym">10 A.M.</div>
+                        <div class="tymtemp" id="tymtemp11">21<sup>o</sup>C</div>
+                    </div>
+                    <div class="time_" id="2p.m.">
+                        <div id="tym">2 P.M.</div>
+                        <div class="tymtemp" id="tymtemp2">34<sup>o</sup>C</div>
+                    </div>
+                    <div class="time_" id="5p.m.">
+                        <div id="tym">5 P.M.</div>
+                        <div class="tymtemp" id="tymtemp5">10<sup>o</sup>C</div>
+                    </div>
+                    <div class="time_" id="9p.m.">
+                        <div id="tym">9 P.M.</div>
+                        <div class="tymtemp" id="tymtemp9">25<sup>o</sup>C</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
